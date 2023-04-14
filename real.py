@@ -632,7 +632,7 @@ class Ui_MainWindow(object):
 			'Current': 'float64',
 			'Voltage': 'float64'
 		}
-        self.df = pd.read_csv('/home/ml_rev/Загрузки/data.csv')
+        self.df = pd.read_csv('samples.csv')
         self.df = self.df.astype(dtypes)
 
 
@@ -656,9 +656,6 @@ class Ui_MainWindow(object):
 
         self.gridLayout_4.addWidget(self.toolbar)
         self.gridLayout_4.addWidget(self.canv)
-
-        # self.gridLayout_2.setColumnStretch(4, 1)
-        # self.gridLayout_2.setRowStretch(1, 1)
 
         self.canv.axes.cla()
         ax = self.canv.axes
